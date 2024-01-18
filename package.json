@@ -1,0 +1,33 @@
+{
+  "name": "stackblitz-starters-osfzh7",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "3.8.10",
+    "@emotion/react": "11.11.3",
+    "@emotion/styled": "11.11.0",
+    "@mui/material": "5.15.5",
+    "@types/react": "18.2.47",
+    "@types/react-dom": "18.2.18",
+    "debug": "^4.3.4",
+    "events": "^3.3.0",
+    "graphql": "16.8.1",
+    "graphql-ws": "5.14.3",
+    "http": "^0.0.0",
+    "https": "^1.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "6.21.2",
+    "subscriptions-transport-ws": "0.11.0",
+    "zlib": "^1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
