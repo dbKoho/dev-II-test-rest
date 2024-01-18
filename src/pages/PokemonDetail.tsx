@@ -10,6 +10,8 @@ const PokemonDetail = (): JSX.Element => {
 
   if (!pokemonInfo) return <>No Info</>;
 
+  console.log(pokemonInfo)
+
   return (
     <>
       <h1 className="text-5xl my-4">Pokemon Detail</h1>
@@ -24,12 +26,22 @@ const PokemonDetail = (): JSX.Element => {
         </button>
       </Link>
       <h2 className="my-4 text-4xl underline">Info:</h2>
-      <p>abilities: </p>
-      <ul className="pl-6">
-        {pokemonInfo.abilities.map((ab) => (
-          <li key={ab.ability.url}>{ab.ability.name}</li>
-        ))}
-      </ul>
+      <table className='border-collapse border-spacing-2 border border-slate-500'>
+        <thead>
+          <tr>
+            <th className='border border-slate-600' >Stat name</th>
+            <th className='border border-slate-600'>Base stat</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pokemonInfo.stats.map(stat => (
+            <tr key={stat.stat.name}>
+              <td className='border border-slate-600'>{stat.stat.name}</td>
+              <td className='border border-slate-600'>{stat.base_stat}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
   );
 };
