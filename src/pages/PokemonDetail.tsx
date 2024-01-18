@@ -10,8 +10,6 @@ const PokemonDetail = (): JSX.Element => {
 
   if (!pokemonInfo) return <>No Info</>;
 
-  console.log(pokemonInfo)
-
   return (
     <>
       <h1 className="text-5xl my-4">Pokemon Detail</h1>
